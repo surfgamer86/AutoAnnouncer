@@ -1,0 +1,4 @@
+name: Autoannouncer
+version: '${project.version}'
+main: be.ilyaan.autoannouncer.Autoannouncer
+api-version: '1.20'
