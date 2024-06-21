@@ -22,7 +22,7 @@ public final class Autoannouncer extends JavaPlugin {
             public void run() {
                 List<String> messages = getConfig().getStringList("Messages");
                 String message = messages.get(new Random().nextInt(messages.size()));
-                Bukkit.getServer().broadcastMessage(message);
+                Bukkit.getServer().broadcastMessage( ChatColor.translateAlternateColorCodes('&',message));
             }
         }, 0, interval);
 
